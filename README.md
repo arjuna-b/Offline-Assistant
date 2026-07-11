@@ -28,32 +28,15 @@ The application is built using **Kotlin**, **Jetpack Compose**, **MVVM Architect
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-### Initial Setup
+| Initial Setup | Welcome Screen | Empty Chat |
+|---------------|----------------|------------|
+| <img src="screenshots/01_initial_setup.jpg" width="220"/> | <img src="screenshots/02_welcome_screen.jpg" width="220"/> | <img src="screenshots/03_empty_chat.jpg" width="220"/> |
 
-![Initial Setup](screenshots/01_initial_setup.jpg)
-
-### Welcome Screen
-
-![Welcome Screen](screenshots/02_welcome_screen.jpg)
-
-### Empty Chat
-
-![Empty Chat](screenshots/03_empty_chat.jpg)
-
-### AI Generating Response
-
-![AI Generating Response](screenshots/04_ai_generating_response.jpg)
-
-### Chat Conversation
-
-![Chat Conversation](screenshots/05_chat_conversation.jpg)
-
-### Conversation Menu
-
-![Conversation Menu](screenshots/06_conversation_menu.jpg)
-
+| AI Thinking | Chat Conversation | Conversation Menu |
+|-------------|-------------------|-------------------|
+| <img src="screenshots/04_ai_generating_response.jpg" width="220"/> | <img src="screenshots/05_chat_conversation.jpg" width="220"/> | <img src="screenshots/06_conversation_menu.jpg" width="220"/> |
 
 ---
 
