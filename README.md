@@ -1,52 +1,65 @@
 # 🤖 Offline Assistant
 
-An AI-powered Android chatbot that runs **completely offline** using an on-device Large Language Model (LLM). Built with modern Android development practices, the application demonstrates a clean architecture, local data persistence, dependency injection, and on-device AI inference.
+An AI-powered Android chatbot that runs **completely offline** using an on-device Large Language Model (LLM). Built with modern Android development practices, the application demonstrates clean architecture, local data persistence, dependency injection, and on-device AI inference.
 
-The primary goal of this project is to showcase modern Android development skills while delivering a privacy-focused AI assistant that works without requiring an internet connection.
+The primary objective of this project is to demonstrate modern Android development by combining on-device AI capabilities with a scalable and maintainable application architecture.
 
 ---
 
-## 📱 Overview
+# 📱 Overview
 
-Offline Assistant allows users to interact with an AI model directly on their Android device. All conversations are processed locally, ensuring user privacy and eliminating dependency on cloud-based AI services.
+Offline Assistant enables users to interact with an AI model directly on their Android device. All conversations are processed locally, ensuring complete privacy while eliminating dependency on cloud-based AI services.
 
-This project was developed using **Kotlin**, **Jetpack Compose**, **MVVM Architecture**, **Hilt**, **Room Database**, and **Google MediaPipe GenAI**.
+The application is built using **Kotlin**, **Jetpack Compose**, **MVVM Architecture**, **Hilt**, **Room Database**, **Kotlin Coroutines**, **Flow**, and **Google MediaPipe GenAI**.
 
 ---
 
 # ✨ Features
 
 - 🤖 Fully offline AI conversations
-- 💬 Interactive chat interface built with Jetpack Compose
-- 💾 Conversation history stored locally using Room Database
-- 🗂️ Multiple conversation support
+- 💬 Modern chat interface built with Jetpack Compose
+- 💾 Persistent conversation history using Room Database
+- 🗂️ Support for multiple conversations
 - 🧠 On-device AI inference using Google MediaPipe GenAI
-- ⚡ Modern Material 3 UI
-- 🧩 Dependency Injection using Hilt
+- 🧩 Dependency Injection with Hilt
+- ⚡ Material Design 3 UI
 - 🧭 Navigation using Navigation Compose
 - 📱 Responsive Compose-based interface
 
 ---
 
-# 📸 Screenshots
+## 📸 Screenshots
 
-> Screenshots will be added soon.
+### Initial Setup
 
-| Home | Chat | Conversations |
-|------|------|---------------|
-| Screenshot | Screenshot | Screenshot |
+![Initial Setup](screenshots/01_initial_setup.png)
 
----
+### Welcome Screen
 
-# 🎥 Demo
+![Welcome Screen](screenshots/02_welcome_screen.png)
 
-> Demo video/GIF will be added soon.
+### Empty Chat
+
+![Empty Chat](screenshots/03_empty_chat.png)
+
+### AI Generating Response
+
+![AI Generating Response](screenshots/04_ai_generating_response.png)
+
+### Chat Conversation
+
+![Chat Conversation](screenshots/05_chat_conversation.png)
+
+### Conversation Menu
+
+![Conversation Menu](screenshots/06_conversation_menu.png)
+
 
 ---
 
 # 🏗️ Architecture
 
-The project follows the **MVVM (Model–View–ViewModel)** architecture along with the **Repository Pattern** to ensure separation of concerns and maintainable code.
+The project follows the **MVVM (Model–View–ViewModel)** architecture along with the **Repository Pattern** to ensure separation of concerns, maintainability, and scalability.
 
 ```
                  User
@@ -81,7 +94,7 @@ app
 │   ├── database
 │   ├── entity
 │   ├── repository
-│   └── manager
+│   └── manager (AI Model Management)
 │
 ├── di
 │   └── Hilt Modules
@@ -128,7 +141,19 @@ app
 | Navigation Compose | Screen Navigation |
 | Kotlin Coroutines | Asynchronous Programming |
 | Kotlin Flow | Reactive Data Streams |
-| MediaPipe GenAI | On-device AI Inference |
+| Google MediaPipe GenAI | On-device AI Inference |
+
+---
+
+# 🎯 Key Highlights
+
+- Fully offline AI chatbot with on-device inference
+- Built entirely with Jetpack Compose
+- Clean MVVM architecture with Repository Pattern
+- Dependency Injection using Hilt
+- Local conversation persistence using Room Database
+- Reactive UI powered by Kotlin Coroutines and Flow
+- Privacy-first design with no cloud communication
 
 ---
 
@@ -137,40 +162,44 @@ app
 ## Clone the repository
 
 ```bash
-git clone https://github.com/your-username/offline-assistant.git
+git clone https://github.com/arjuna-b/Offline-Assistant.git
 ```
 
 Open the project using **Android Studio**.
 
-Sync Gradle dependencies.
+Sync the Gradle dependencies.
 
-Run the application on a physical device or emulator.
+Build and run the application on a supported Android device or emulator.
 
 ---
 
 # 🧠 AI Model Setup
 
-The AI model is **not included** in this repository because of its large file size.
+> **Important**
+
+The AI model is intentionally **not included** in this repository because of its large file size and distribution limitations.
 
 To run the application:
 
-1. Download a compatible MediaPipe-supported LLM model.
-2. Place the model inside the location expected by the application.
-3. Rebuild and run the project.
+1. Download a compatible **Google MediaPipe GenAI** supported LLM model.
+2. Place the model in the application's expected storage location.
+3. Build and run the application.
+
+> **Note:** The project will compile successfully, but AI responses will not be generated unless a compatible model is available.
 
 ---
 
 # 💾 Local Storage
 
-Conversation data is persisted using **Room Database**.
+Conversation data is persisted locally using **Room Database**.
 
-Stored data includes:
+Stored information includes:
 
 - Conversations
 - Chat Messages
 - Conversation History
 
-This enables users to continue previous conversations even after restarting the application.
+This allows users to continue previous conversations even after restarting the application.
 
 ---
 
@@ -204,9 +233,9 @@ Update Compose UI
 
 # 🔒 Privacy
 
-All AI processing is performed locally on the device.
+All AI inference is performed locally on the device.
 
-No conversations or prompts are transmitted to external servers.
+No prompts, conversations, or user data are transmitted to external servers.
 
 This ensures:
 
@@ -220,16 +249,11 @@ This ensures:
 
 - Markdown rendering
 - Streaming AI responses
-- Export conversations
-- Delete conversations
 - Search conversations
+- Export conversations
 - Voice input
-- Voice output
-- Dark theme customization
 - Multiple AI model support
-- Image understanding
-- PDF document chat
-- RAG (Retrieval-Augmented Generation)
+- Retrieval-Augmented Generation (RAG)
 - Unit Testing
 - UI Testing
 
@@ -237,7 +261,7 @@ This ensures:
 
 # 🎯 Learning Outcomes
 
-This project helped strengthen my understanding of:
+This project strengthened my understanding of:
 
 - Modern Android Development
 - Jetpack Compose
@@ -249,18 +273,12 @@ This project helped strengthen my understanding of:
 - Kotlin Flow
 - Local AI Integration
 - State Management in Compose
-- Android Application Architecture
+- Scalable Android Application Architecture
 
 ---
 
 # 👨‍💻 About This Project
 
-This project was built as a personal learning initiative to explore modern Android application architecture and on-device AI capabilities using Google's MediaPipe GenAI framework.
+Offline Assistant was built as a personal learning project to explore modern Android application development and on-device AI using Google's MediaPipe GenAI framework.
 
-The focus was on building a maintainable, scalable, and fully offline Android application using current Android development best practices.
-
----
-
-# 📄 License
-
-This project is intended for educational and portfolio purposes.
+The focus was on designing a maintainable, scalable, privacy-focused Android application that demonstrates current Android development best practices while integrating local AI capabilities.
