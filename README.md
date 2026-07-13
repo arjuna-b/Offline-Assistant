@@ -23,7 +23,6 @@ The application is built using **Kotlin**, **Jetpack Compose**, **MVVM Architect
 - 🧠 On-device AI inference using Google MediaPipe GenAI
 - 🧩 Dependency Injection with Hilt
 - ⚡ Material Design 3 UI
-- 🧭 Navigation using Navigation Compose
 - 📱 Responsive Compose-based interface
 
 ---
@@ -76,16 +75,15 @@ app
 │   ├── dao
 │   ├── database
 │   ├── entity
-│   ├── repository
-│   └── manager (AI Model Management)
+│   └── repository
 │
 ├── di
+│   ├── manager (AI Model Management)
 │   └── Hilt Modules
 │
 ├── ui
 │   ├── screens
-│   ├── components
-│   ├── navigation
+│   ├── uiState
 │   ├── viewmodel
 │   └── theme
 │
@@ -107,7 +105,6 @@ app
 - Room Database
 - Kotlin Coroutines
 - Kotlin Flow
-- Navigation Compose
 - Google MediaPipe GenAI
 - Android SDK
 
@@ -121,7 +118,6 @@ app
 | Material 3 | UI Components |
 | Room | Local Database |
 | Hilt | Dependency Injection |
-| Navigation Compose | Screen Navigation |
 | Kotlin Coroutines | Asynchronous Programming |
 | Kotlin Flow | Reactive Data Streams |
 | Google MediaPipe GenAI | On-device AI Inference |
